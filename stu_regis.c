@@ -1,3 +1,5 @@
+//27/04/21
+//CREATE TEXT FILES NAMED "Writefile.bin", "Updatefile.bin" (Optional)
 #include<stdio.h>
 #include<stdlib.h>
 struct Student{
@@ -7,10 +9,12 @@ struct Student{
 };
 void writefile(struct Student stu)
 {
+	
 	int n,i;
 	FILE *f;
 	f = fopen("Writefile.bin","ab");
-	printf("Input the amount of student to write	:	");scanf("%d",&n);
+	printf("How many student will be registered?	:	");scanf("%d",&n);
+	// INPUT ONLY INTEGER 
 	for(i=1;i<=n;i++)
 	{
 		printf("==================== Record %d ======================\n",i);
